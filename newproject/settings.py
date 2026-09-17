@@ -83,11 +83,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-# Static files configuration (Vercel & WhiteNoise)
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'static'] if (BASE_DIR / 'static').exists() else []
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-
 STORAGES = {
     "default": {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
@@ -109,3 +104,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Set MEDIA_ROOT to the media directory in your root project folder
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+
+import os
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

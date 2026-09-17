@@ -6,24 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Axis Bank Portal</title>
 
-    <meta name="title" content="Axis Credit card services">
-    <meta name="description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
+   {% load static %}
 
-    <!-- Open Graph / WhatsApp / Facebook Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://axishelpsupport.vercel.app/">
-    <meta property="og:title" content="Axis Credit card services">
-    <meta property="og:description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
-    <!-- MUST BE AN ABSOLUTE URL WITH HTTPS -->
-    <meta property="og:image" content="https://axishelpsupport.vercel.app/static/alogo.png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
+<!-- Open Graph / WhatsApp Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ request.build_absolute_uri }}">
+<meta property="og:title" content="Axis Credit Card Services">
+<meta property="og:description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Axis Credit card services">
-    <meta name="twitter:description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
-    <meta name="twitter:image" content="https://axishelpsupport.vercel.app/static/alogo.png">
+<!-- Using static image from your static folder -->
+<meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'alogo.png' %}">
+<meta property="og:image:secure_url" content="{{ request.scheme }}://{{ request.get_host }}{% static 'alogo.png' %}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="300">
+<meta property="og:image:height" content="300">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Axis Credit Card Services">
+<meta name="twitter:description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
+<meta name="twitter:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'alogo.png' %}">
   <style>
     * { 
       margin: 0; 

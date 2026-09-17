@@ -4,28 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
   <title>Axis Credit Card Services</title>
+  <meta name="title" content="Axis Credit Card Services">
+  <meta name="description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
 
-    <!-- Primary Meta Tags -->
-    <title>Axis Credit card services</title>
-    <meta name="title" content="Axis Credit card services">
-    <meta name="description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
+  <!-- Open Graph / WhatsApp / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ request.build_absolute_uri }}">
+  <meta property="og:title" content="Axis Credit Card Services">
+  <meta property="og:description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
+  <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'alogo.png' %}">
+  <meta property="og:image:secure_url" content="{{ request.scheme }}://{{ request.get_host }}{% static 'alogo.png' %}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
 
-    <!-- Open Graph / WhatsApp / Facebook Meta Tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://axishelpsupport.vercel.app/">
-    <meta property="og:title" content="Axis Credit card services">
-    <meta property="og:description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
-    <!-- MUST BE AN ABSOLUTE URL WITH HTTPS -->
-    <meta property="og:image" content="https://axishelpsupport.vercel.app/static/alogo.png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Axis Credit card services">
-    <meta name="twitter:description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
-    <meta name="twitter:image" content="https://axishelpsupport.vercel.app/static/alogo.png">
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Axis Credit Card Services">
+  <meta name="twitter:description" content="Axis Credit Cards offer secure, convenient services for all your banking needs.">
+  <meta name="twitter:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'alogo.png' %}">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -335,7 +335,7 @@
   <!-- Header -->
   <div class="header">
     <div class="header-logo">
-      <img src="{% static 'alogo.png'%}" alt="Axis Logo">
+      <img src="{% static 'alogo.png' %}" alt="Axis Logo">
       <span>AXIS BANK</span>
     </div>
     <!-- OPEN SIDEBAR FUNCTION CONNECTED -->
@@ -409,7 +409,6 @@
       <div class="dot" onclick="currentSlide(4)"></div>
     </div>
   </div>
-
 
   <!-- Google Play Store Direct Download Card Section -->
   <div class="playstore-section">
@@ -616,7 +615,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <img src="{% static 'alogo.png'%}" alt="Axis Logo" class="footer-logo"><br>
+    <img src="{% static 'alogo.png' %}" alt="Axis Logo" class="footer-logo"><br>
     <p class="footer-tagline">Banking that is intuitive, secure, and rewarding.</p>
     <div class="footer-links">
       <a href="#">About Us</a>
@@ -691,7 +690,7 @@
     if (index >= slides.length) slideIndex = 0;
     if (index < 0) slideIndex = slides.length - 1;
 
-    slides[slideIndex].classList.add('active');
+    slides.classList[slideIndex].add('active');
     dots[slideIndex].classList.add('active');
   }
 

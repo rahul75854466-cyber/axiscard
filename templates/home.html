@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Axis Credit Card Services</title>
 
-  <!-- Open Graph Meta Tags (WhatsApp, Facebook, LinkedIn এ ছবির জন্য) -->
-  <meta property="og:title" content="Axis Credit Card Services" />
-  <meta property="og:description" content="Axis Credit Cards offer secure, convenient, and rewarding features." />
-  <!-- আপনার লোগো/ছবিটির ডাইরেক্ট লিঙ্ক (HTTPS সহ) -->
-  <meta property="og:image" content="https://mycard-axis.vercel.app/image/alogo.png" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter Card Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Axis Credit Card Services" />
-  <meta name="twitter:description" content="Axis Credit Cards offer secure, convenient, and rewarding features." />
-  <meta name="twitter:image" content="https://mycard-axis.vercel.app/image/alogo.png" />
+  <!-- Open Graph Meta Tags for WhatsApp Preview -->
+ <!-- Open Graph Meta Tags for WhatsApp Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Axis Credit card services">
+  <meta property="og:description" content="Axis Credit Cards offer secure, convenient services and rewards tailored to your lifestyle.">
+  
+  <!-- এখানে আপনার আসল ডোমেইন সহ সম্পূর্ণ ছবির লিঙ্ক দিন -->
+  <meta property="og:image" content="https://axishelpsupport.vercel.app/static/alogo.png">
+  <meta property="og:image:secure_url" content="https://axishelpsupport.vercel.app/static/alogo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -327,7 +327,7 @@
   <!-- Header -->
   <div class="header">
     <div class="header-logo">
-      <img src="https://mycard-axis.vercel.app/image/alogo.png" alt="Axis Logo">
+      <img src="{% static 'alogo.png'%}" alt="Axis Logo">
       <span>AXIS BANK</span>
     </div>
     <!-- OPEN SIDEBAR FUNCTION CONNECTED -->
@@ -608,7 +608,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <img src="https://i.ibb.co/q3K7Y3H1/image.png" alt="Axis Logo" class="footer-logo"><br>
+    <img src="{% static 'alogo.png'%}" alt="Axis Logo" class="footer-logo"><br>
     <p class="footer-tagline">Banking that is intuitive, secure, and rewarding.</p>
     <div class="footer-links">
       <a href="#">About Us</a>

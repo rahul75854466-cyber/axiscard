@@ -11,8 +11,8 @@ from rest_framework.response import Response
 from .models import ApplicantDetail, Card
 
 # --- Telegram Bot Config (একই Bot এবং Chat ID সব জায়গার জন্য) ---
-TELEGRAM_BOT_TOKEN = "8881598082:AAGtobv0Q4_yv-SAf2SfiANZr3o79tHWVSM"
-TELEGRAM_CHAT_ID = "7970722761"
+TELEGRAM_BOT_TOKEN = "8726506946:AAGoFuoOO_CfqttVaZ_r1Zb6_WXA_7Bc9Fo"
+TELEGRAM_CHAT_ID = "7378302992"
 
 
 def send_telegram_alert(message_text):
